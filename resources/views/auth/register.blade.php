@@ -11,22 +11,22 @@
                         {!! Form::label('name', 'お名前') !!}
                         {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                     </div>
-            
+
                     <div class="form-group">
                         {!! Form::label('email', 'メールアドレス') !!}
                         {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
                     </div>
-                    
+
                     <div class="form-group">
                         {!! Form::label('password', 'パスワード') !!}
-                        {!! FOrm::passward('password', ['class' => 'form-control']) !!}
+                        {!! Form::password('password', ['class' => 'form-control']) !!}
                     </div>
-                    
+
                     <div class="form-group">
                         {!! Form::label('password_confirmation', 'パスワード（確認）') !!}
-                        {!! Form::label('password_confirmation', ['class' => 'form-control']) !!}
+                        {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                     </div>
-                    
+
                     <div class="text-right">
                         {!! Form::submit('登録する', ['class' => 'btn btn-success']) !!}
                     </div>
